@@ -1,0 +1,49 @@
+{
+  "research_tree": {
+    "tier_1": {
+      "label": "Foundation Sciences", "color": [0,200,120],
+      "nodes": {
+        "basic_genetics":        {"id":"basic_genetics","name":"Basic Genetics","tier":1,"cost":100,"prerequisites":[],"position":{"x":0,"y":0},"unlocks":{"gene_lab_basic":true},"flavor_text":"Every trait is a letter in a species autobiography.","description":"Foundational genetics enabling Gene Lab basic traits."},
+        "ecosystem_observation": {"id":"ecosystem_observation","name":"Ecosystem Observation","tier":1,"cost":100,"prerequisites":[],"position":{"x":1,"y":0},"unlocks":{"statistics_dashboard":true},"flavor_text":"You cannot shape what you cannot measure.","description":"Monitor populations, food chains, and ecosystem health."},
+        "environmental_basics":  {"id":"environmental_basics","name":"Environmental Science","tier":1,"cost":150,"prerequisites":[],"position":{"x":2,"y":0},"unlocks":{"biome_info_panel":true},"flavor_text":"Life dances with its environment.","description":"Biome classification, climate fundamentals, resource flow."}
+      }
+    },
+    "tier_2": {
+      "label": "Applied Biology", "color": [0,170,255],
+      "nodes": {
+        "advanced_genetics":  {"id":"advanced_genetics","name":"Advanced Genetics","tier":2,"cost":300,"prerequisites":["basic_genetics"],"position":{"x":0,"y":1},"unlocks":{"editable_genes":["camouflage","armor","bite_force"]},"flavor_text":"Form follows function, and function follows gene.","description":"Deeper genome manipulation with behavioral genes."},
+        "behavioral_science": {"id":"behavioral_science","name":"Behavioral Science","tier":2,"cost":250,"prerequisites":["ecosystem_observation"],"position":{"x":1,"y":1},"unlocks":{"behavior_editing":true},"flavor_text":"Intelligence is natures most expensive gamble.","description":"Edit how creatures think, feel, and make decisions."},
+        "ecology_science":    {"id":"ecology_science","name":"Ecological Systems","tier":2,"cost":300,"prerequisites":["environmental_basics","ecosystem_observation"],"position":{"x":2,"y":1},"unlocks":{"food_chain_visualization":true,"biodiversity_index":true},"flavor_text":"Every predator is ten thousand prey.","description":"Advanced ecosystem modeling and food web visualization."},
+        "metabolic_science":  {"id":"metabolic_science","name":"Metabolic Science","tier":2,"cost":350,"prerequisites":["advanced_genetics"],"position":{"x":0.5,"y":1.5},"unlocks":{"metabolic_editing":true},"flavor_text":"Life is just chemistry with opinions.","description":"Energy flow, nutrition, and climate tolerance genes."}
+      }
+    },
+    "tier_3": {
+      "label": "Environmental Engineering", "color": [255,170,0],
+      "nodes": {
+        "genetic_splicing":   {"id":"genetic_splicing","name":"Genetic Splicing","tier":3,"cost":500,"prerequisites":["advanced_genetics"],"position":{"x":0,"y":2},"unlocks":{"cross_species_splicing":true},"flavor_text":"Nature drew a line. We redrew it.","description":"Combine traits from two different species."},
+        "neural_mapping":     {"id":"neural_mapping","name":"Neural Mapping","tier":3,"cost":400,"prerequisites":["behavioral_science"],"position":{"x":1,"y":2},"unlocks":{"intelligence_boost":true},"flavor_text":"The brain is just evolutions most complex organ so far.","description":"Direct modification of neural pathways."},
+        "climate_control":    {"id":"climate_control","name":"Climate Control","tier":3,"cost":600,"prerequisites":["ecology_science"],"position":{"x":2,"y":2},"unlocks":{"weather_manipulation":true},"flavor_text":"Control the sky, control the world.","description":"Manipulate weather, temperature, seasons."},
+        "resource_engineering":{"id":"resource_engineering","name":"Resource Engineering","tier":3,"cost":500,"prerequisites":["ecology_science"],"position":{"x":2.5,"y":2},"unlocks":{"place_food_source":true},"flavor_text":"Abundance and scarcity are the sculptors tools.","description":"Place, remove, and modify food and water sources."},
+        "disease_lab":        {"id":"disease_lab","name":"Pathogen Laboratory","tier":3,"cost":700,"prerequisites":["metabolic_science","ecology_science"],"position":{"x":1.5,"y":2.5},"unlocks":{"disease_event_tool":true},"flavor_text":"The invisible killer shapes evolution more than any predator.","description":"Design and deploy targeted diseases."}
+      }
+    },
+    "tier_4": {
+      "label": "Advanced Simulation", "color": [180,80,255],
+      "nodes": {
+        "terraforming":         {"id":"terraforming","name":"Terraforming","tier":4,"cost":800,"prerequisites":["climate_control","resource_engineering"],"position":{"x":2,"y":3},"unlocks":{"biome_conversion":true},"flavor_text":"The planet is clay. Become the sculptor.","description":"Convert biomes. Reshape the world."},
+        "genome_sequencing":    {"id":"genome_sequencing","name":"Full Genome Sequencing","tier":4,"cost":1500,"prerequisites":["genetic_splicing","neural_mapping"],"position":{"x":0.5,"y":3},"unlocks":{"full_genome_view":true},"flavor_text":"To read the genome is to read the autobiography of life.","description":"View and edit any creature genome in real time."},
+        "ice_age_trigger":      {"id":"ice_age_trigger","name":"Cryogenic Control","tier":4,"cost":1000,"prerequisites":["climate_control"],"position":{"x":3,"y":3},"unlocks":{"disaster_ice_age":true},"flavor_text":"Ice ages do not kill. They filter.","description":"Trigger controlled ice age events."},
+        "ecosystem_prediction": {"id":"ecosystem_prediction","name":"Predictive Modeling","tier":4,"cost":1200,"prerequisites":["ecology_science","genome_sequencing"],"position":{"x":1.5,"y":3},"unlocks":{"future_state_model":true,"extinction_risk_alert":true},"flavor_text":"The best intervention is planned three generations ahead.","description":"Run future state simulations before committing."}
+      }
+    },
+    "tier_5": {
+      "label": "Mastery", "color": [255,68,68],
+      "nodes": {
+        "synthetic_life":     {"id":"synthetic_life","name":"Synthetic Biology","tier":5,"cost":2000,"prerequisites":["genome_sequencing","disease_lab"],"position":{"x":0,"y":4},"unlocks":{"synthetic_species":true},"flavor_text":"We are no longer observers. We are authors.","description":"Create entirely artificial organisms."},
+        "perfect_evolution":  {"id":"perfect_evolution","name":"Guided Evolution","tier":5,"cost":3000,"prerequisites":["ecosystem_prediction","genome_sequencing"],"position":{"x":1.5,"y":4},"unlocks":{"evolution_steering":true},"flavor_text":"Darwins theory, plus intent.","description":"Directly steer evolutionary pressure."},
+        "planet_architecture":{"id":"planet_architecture","name":"Planet Architecture","tier":5,"cost":5000,"prerequisites":["terraforming","ice_age_trigger"],"position":{"x":3,"y":4},"unlocks":{"full_biome_control":true},"flavor_text":"Not a world. Your world.","description":"Full control over all biomes and climate."},
+        "genesis_protocol":   {"id":"genesis_protocol","name":"Genesis Protocol","tier":5,"cost":8000,"prerequisites":["synthetic_life","perfect_evolution","planet_architecture"],"position":{"x":1.5,"y":5},"unlocks":{"prestige_mode":true},"flavor_text":"In the beginning there was nothing. Then a geneticist.","description":"Seed a new world with all accumulated knowledge."}
+      }
+    }
+  }
+}

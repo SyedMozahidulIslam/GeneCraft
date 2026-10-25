@@ -1,0 +1,41 @@
+{
+  "categories": {
+    "foundation":{"label":"Foundation","color":[0,200,120]},
+    "evolution": {"label":"Evolution","color":[0,170,255]},
+    "ecology":   {"label":"Ecology","color":[255,170,0]},
+    "genetics":  {"label":"Genetics","color":[180,80,255]},
+    "survival":  {"label":"Survival","color":[255,68,68]},
+    "research":  {"label":"Research","color":[0,220,220]},
+    "world":     {"label":"World","color":[255,200,0]},
+    "mastery":   {"label":"Mastery","color":[255,100,200]},
+    "chaos":     {"label":"Chaos","color":[255,80,0]},
+    "longevity": {"label":"Longevity","color":[100,220,180]}
+  },
+  "achievements": {
+    "ACH001": {"id":"ACH001","name":"First Breath","description":"Release your first species into the world.","category":"foundation","hidden":false,"points":10,"condition":{"type":"species_count_total","value":1},"flavor":"Every living world begins with one small act of creation."},
+    "ACH002": {"id":"ACH002","name":"Chain of Life","description":"Build a complete 4-level food chain simultaneously.","category":"ecology","hidden":false,"points":30,"condition":{"type":"trophic_levels_active","value":4},"flavor":"Grass to herbivore to predator to apex — the circle is complete."},
+    "ACH003": {"id":"ACH003","name":"First Evolution","description":"Observe a natural mutation event in your ecosystem.","category":"evolution","hidden":false,"points":20,"condition":{"type":"evolution_events_total","value":1},"flavor":"Life does not ask permission before it changes."},
+    "ACH004": {"id":"ACH004","name":"Adaptation","description":"A species adapts a new trait under environmental pressure.","category":"evolution","hidden":false,"points":40,"condition":{"type":"adaptation_events_total","value":1},"flavor":"Pressure creates diamonds — and new species."},
+    "ACH005": {"id":"ACH005","name":"The Branching","description":"Witness a speciation event.","category":"evolution","hidden":false,"points":75,"condition":{"type":"speciation_events_total","value":1},"flavor":"One becomes two. The tree of life grows another branch."},
+    "ACH006": {"id":"ACH006","name":"Requiem","description":"Let a species go extinct.","category":"ecology","hidden":false,"points":15,"condition":{"type":"extinction_events_total","value":1},"flavor":"Extinction is not failure. It is selection."},
+    "ACH007": {"id":"ACH007","name":"Survival Master","description":"A species survives for 100 generations.","category":"longevity","hidden":false,"points":60,"condition":{"type":"species_max_generations","value":100},"flavor":"One hundred generations. The definition of resilience."},
+    "ACH008": {"id":"ACH008","name":"Biodiversity","description":"Maintain 10 or more species simultaneously.","category":"ecology","hidden":false,"points":50,"condition":{"type":"simultaneous_species","value":10},"flavor":"Life thrives in variety."},
+    "ACH009": {"id":"ACH009","name":"Apex Creator","description":"Create and sustain an Apex Predator with population above 20.","category":"genetics","hidden":false,"points":80,"condition":{"type":"apex_predator_population","value":20},"flavor":"At the top of the chain, nothing hunts you."},
+    "ACH010": {"id":"ACH010","name":"Master Geneticist","description":"Fully unlock all Gene Lab capabilities.","category":"genetics","hidden":false,"points":100,"condition":{"type":"research_nodes_complete","value":["basic_genetics","advanced_genetics"]},"flavor":"The genome holds no more secrets from you."},
+    "ACH011": {"id":"ACH011","name":"Against All Odds","description":"A species survives a volcanic eruption.","category":"survival","hidden":false,"points":90,"condition":{"type":"species_survived_event","event":"volcanic_eruption"},"flavor":"When the mountain exploded, one lineage refused to die."},
+    "ACH012": {"id":"ACH012","name":"Planet Builder","description":"Fill all 8 biomes with at least one living species.","category":"world","hidden":false,"points":120,"condition":{"type":"biomes_populated","value":8},"flavor":"Forest, grassland, mountain, river, lake, desert, swamp, arctic — all alive."},
+    "ACH013": {"id":"ACH013","name":"Ecosystem Architect","description":"Maintain biodiversity index above 0.7 for 500 ticks.","category":"mastery","hidden":false,"points":150,"condition":{"type":"biodiversity_sustained","index":0.7,"ticks":500},"flavor":"Balance is not luck. Balance is design."},
+    "ACH014": {"id":"ACH014","name":"Research Pioneer","description":"Unlock every node in the research tree.","category":"research","hidden":false,"points":200,"condition":{"type":"research_tree_complete","value":true},"flavor":"There is nothing left to discover. Now it is time to create."},
+    "ACH015": {"id":"ACH015","name":"Genesis","description":"Create a self-sustaining ecosystem with no intervention for 200 ticks.","category":"mastery","hidden":true,"points":250,"condition":{"type":"no_intervention_ticks","value":200},"flavor":"You built it. Then you let it go. It survived anyway."},
+    "ACH016": {"id":"ACH016","name":"Comeback Story","description":"A species recovers from 3 or fewer individuals back to 50+.","category":"survival","hidden":false,"points":110,"condition":{"type":"population_recovery","from":3,"to":50},"flavor":"Three individuals. The spark that refused to go out."},
+    "ACH017": {"id":"ACH017","name":"Pandemonium","description":"Trigger 5 different disaster types in a single session.","category":"chaos","hidden":false,"points":70,"condition":{"type":"unique_disasters_triggered","value":5},"flavor":"Chaos is also a tool. A blunt one, but effective."},
+    "ACH018": {"id":"ACH018","name":"Perfect Biome","description":"A single biome reaches 100% ecological health score.","category":"world","hidden":false,"points":130,"condition":{"type":"biome_health_max","value":1.0},"flavor":"A perfect biome is a symphony with no wrong notes."},
+    "ACH019": {"id":"ACH019","name":"Ancient Lineage","description":"A species survives for 500 or more generations.","category":"longevity","hidden":true,"points":300,"condition":{"type":"species_max_generations","value":500},"flavor":"Five hundred generations. They were here before. They will be here after."},
+    "ACH020": {"id":"ACH020","name":"Living Planet","description":"Reach 50 simultaneous species across the world.","category":"mastery","hidden":false,"points":400,"condition":{"type":"simultaneous_species","value":50},"flavor":"Fifty voices in the chorus of life."},
+    "ACH021": {"id":"ACH021","name":"The Ice Architect","description":"Trigger an Ice Age and have 3 species survive.","category":"chaos","hidden":false,"points":180,"condition":{"type":"ice_age_survivors","value":3},"flavor":"The ice is indiscriminate. The strong adapt."},
+    "ACH022": {"id":"ACH022","name":"Pack Lord","description":"A pack-hunting species with Intelligence 8+ reaches population 100.","category":"genetics","hidden":false,"points":95,"condition":{"type":"pack_hunter_population","intelligence_min":8,"population":100},"flavor":"Alone, vulnerable. Together, apex."},
+    "ACH023": {"id":"ACH023","name":"Synthetic Dawn","description":"Create a fully synthetic organism reaching 30 individuals.","category":"genetics","hidden":true,"points":220,"condition":{"type":"synthetic_species_population","value":30},"flavor":"Not born. Designed. And yet, alive."},
+    "ACH024": {"id":"ACH024","name":"Trophic Cascade","description":"Remove the apex predator and observe a full trophic cascade.","category":"ecology","hidden":true,"points":160,"condition":{"type":"trophic_cascade_observed","value":true},"flavor":"Remove the top, and the whole tower shakes."},
+    "ACH025": {"id":"ACH025","name":"Time Lord","description":"Simulate 10,000 world ticks in a single session.","category":"mastery","hidden":false,"points":85,"condition":{"type":"ticks_in_session","value":10000},"flavor":"Ten thousand moments. Each one a generations worth of decisions."}
+  }
+}

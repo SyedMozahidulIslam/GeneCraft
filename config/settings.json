@@ -1,0 +1,15 @@
+{
+  "game": {"title":"GeneCraft","version":"1.0.0","target_fps":60,"debug_mode":false,"log_level":"INFO"},
+  "window": {"width":1280,"height":720,"min_width":1024,"min_height":600,"resizable":true,"fullscreen":false,"vsync":true,"title_bar":"GeneCraft — Shape Genes. Control Evolution. Build a Living World."},
+  "simulation": {"tick_rate":10,"ticks_per_year":365,"ticks_per_season":91,"max_creatures_total":5000,"max_creatures_per_species":500,"max_species":50,"spatial_grid_cell_size":20,"ai_batch_size":100,"lod_distance_threshold":300,"speeds":{"paused":0,"normal":1,"fast":3,"faster":8,"ultra":20},"default_speed":"normal"},
+  "world": {"small":{"width":100,"height":100,"max_species":12},"medium":{"width":200,"height":200,"max_species":25},"large":{"width":400,"height":400,"max_species":50},"default_size":"medium","tile_size_px":8,"terrain_octaves":6,"terrain_persistence":0.5,"terrain_lacunarity":2.0,"river_generation_attempts":30,"lake_generation_attempts":15},
+  "genetics": {"default_mutation_rate":0.05,"min_mutation_rate":0.001,"max_mutation_rate":0.5,"fitness_eval_interval":10,"speciation_genome_divergence":3.0,"speciation_min_generations":20,"adaptation_threshold":0.6,"adaptation_boost":0.15,"extinction_population_threshold":3,"extinction_starvation_ticks":5},
+  "research": {"base_rp_per_tick":1,"milestone_rp_bonus":50,"evolution_event_rp":25,"species_diversity_bonus_interval":100,"species_diversity_bonus_rp":10},
+  "ui": {"theme":"dark","font_size_large":24,"font_size_medium":16,"font_size_small":12,"font_size_tiny":10,"panel_slide_speed":600,"tooltip_delay_ms":400,"notification_duration_ms":4000,"minimap_width":180,"minimap_height":120,"graph_history_length":300,"animation_speed":1.0},
+  "colors": {"background":[13,17,23],"surface":[22,27,34],"surface_alt":[30,37,46],"border":[48,58,72],"border_bright":[70,85,105],"accent_green":[0,255,136],"accent_blue":[0,170,255],"accent_purple":[140,80,255],"accent_amber":[255,170,0],"accent_red":[255,68,68],"accent_cyan":[0,220,220],"text_primary":[230,237,243],"text_secondary":[139,148,158],"text_muted":[80,90,105],"text_accent":[0,255,136],"panel_bg":[16,22,30],"panel_header":[20,28,38],"button_default":[30,37,46],"button_hover":[45,55,70],"button_active":[0,120,80],"slider_track":[40,50,65],"slider_thumb":[0,255,136],"graph_grid":[30,40,55],"health_high":[0,210,100],"health_mid":[255,170,0],"health_low":[255,68,68]},
+  "audio": {"master_volume":0.8,"music_volume":0.4,"ambient_volume":0.6,"sfx_volume":0.7,"ui_volume":0.5,"crossfade_duration_ms":2000,"enabled":true},
+  "save": {"autosave_interval_seconds":300,"max_slots":5,"save_directory":"saves","autosave_slot_name":"__autosave__","quicksave_slot_name":"__quicksave__","save_format_version":"1.0.0"},
+  "performance": {"target_simulation_ms":100,"max_simulation_ms":500,"creature_object_pool_size":5000,"use_numpy_tiles":true,"profile_enabled":false},
+  "campaign": {"data_directory":"data/campaign","chapter_count":8},
+  "paths": {"saves":"saves","screenshots":"screenshots","assets":"assets","config":"config","data":"data","docs":"docs"}
+}

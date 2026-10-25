@@ -1,0 +1,46 @@
+{
+  "gene_categories": {
+    "physical":  {"label":"Physical Traits","color":[0,200,120]},
+    "behavioral":{"label":"Behavioral Traits","color":[0,170,255]},
+    "genetic":   {"label":"Genetic Traits","color":[180,80,255]},
+    "metabolic": {"label":"Metabolic Traits","color":[255,170,0]}
+  },
+  "genes": {
+    "physical": {
+      "speed":      {"id":"speed","label":"Speed","min":0.1,"max":10.0,"default":3.0,"unit":"m/s","cost_per_point":12},
+      "size":       {"id":"size","label":"Body Size","min":0.1,"max":10.0,"default":3.0,"unit":"scale","cost_per_point":8},
+      "strength":   {"id":"strength","label":"Strength","min":0.1,"max":10.0,"default":3.0,"unit":"N","cost_per_point":10},
+      "vision":     {"id":"vision","label":"Vision Range","min":1.0,"max":10.0,"default":4.0,"unit":"tiles","cost_per_point":8},
+      "stamina":    {"id":"stamina","label":"Stamina","min":1.0,"max":10.0,"default":4.0,"unit":"points","cost_per_point":7},
+      "camouflage": {"id":"camouflage","label":"Camouflage","min":0.0,"max":10.0,"default":2.0,"unit":"points","cost_per_point":15},
+      "armor":      {"id":"armor","label":"Natural Armor","min":0.0,"max":10.0,"default":1.0,"unit":"points","cost_per_point":14},
+      "bite_force": {"id":"bite_force","label":"Bite Force","min":0.0,"max":10.0,"default":2.0,"unit":"kN","cost_per_point":11}
+    },
+    "behavioral": {
+      "aggression":        {"id":"aggression","label":"Aggression","min":0.0,"max":10.0,"default":3.0,"cost_per_point":9},
+      "intelligence":      {"id":"intelligence","label":"Intelligence","min":1.0,"max":10.0,"default":3.0,"cost_per_point":20},
+      "social_behavior":   {"id":"social_behavior","label":"Sociality","min":0.0,"max":10.0,"default":3.0,"cost_per_point":7},
+      "migration_instinct":{"id":"migration_instinct","label":"Migration Instinct","min":0.0,"max":10.0,"default":2.0,"cost_per_point":6},
+      "curiosity":         {"id":"curiosity","label":"Curiosity","min":0.0,"max":10.0,"default":3.0,"cost_per_point":5},
+      "territorial":       {"id":"territorial","label":"Territoriality","min":0.0,"max":10.0,"default":3.0,"cost_per_point":7},
+      "fearfulness":       {"id":"fearfulness","label":"Fearfulness","min":0.0,"max":10.0,"default":4.0,"cost_per_point":4}
+    },
+    "genetic": {
+      "mutation_rate":      {"id":"mutation_rate","label":"Mutation Rate","min":0.001,"max":0.5,"default":0.05,"cost_per_point":15},
+      "adaptability":       {"id":"adaptability","label":"Adaptability","min":0.0,"max":10.0,"default":4.0,"cost_per_point":18},
+      "reproduction_rate":  {"id":"reproduction_rate","label":"Reproduction Rate","min":0.1,"max":10.0,"default":2.0,"cost_per_point":6},
+      "lifespan":           {"id":"lifespan","label":"Lifespan","min":10,"max":500,"default":100,"cost_per_point":1},
+      "disease_resistance": {"id":"disease_resistance","label":"Disease Resistance","min":0.0,"max":10.0,"default":3.0,"cost_per_point":10}
+    },
+    "metabolic": {
+      "energy_efficiency":  {"id":"energy_efficiency","label":"Energy Efficiency","min":0.1,"max":3.0,"default":1.0,"cost_per_point":20},
+      "water_need":         {"id":"water_need","label":"Water Need","min":0.1,"max":3.0,"default":1.0,"cost_per_point":15},
+      "temp_tolerance_min": {"id":"temp_tolerance_min","label":"Min Temp Tolerance","min":-60,"max":20,"default":-5,"cost_per_point":8},
+      "temp_tolerance_max": {"id":"temp_tolerance_max","label":"Max Temp Tolerance","min":10,"max":60,"default":35,"cost_per_point":8}
+    }
+  },
+  "species_templates": {
+    "starter_herbivore": {"id":"starter_herbivore","name":"Basic Herbivore","trophic_level":2,"genome":{"physical":{"speed":4.0,"size":3.0,"strength":2.0,"vision":5.0,"stamina":5.0,"camouflage":1.0,"armor":1.0,"bite_force":0.5},"behavioral":{"aggression":1.0,"intelligence":3.0,"social_behavior":7.0,"migration_instinct":3.0,"curiosity":4.0,"territorial":1.0,"fearfulness":7.0},"genetic":{"mutation_rate":0.05,"adaptability":4.0,"reproduction_rate":3.0,"lifespan":80,"disease_resistance":4.0},"metabolic":{"energy_efficiency":1.0,"water_need":1.0,"temp_tolerance_min":0,"temp_tolerance_max":35}}},
+    "fast_predator":     {"id":"fast_predator","name":"Swift Hunter","trophic_level":4,"genome":{"physical":{"speed":8.0,"size":4.0,"strength":5.0,"vision":7.0,"stamina":6.0,"camouflage":2.0,"armor":0.5,"bite_force":5.0},"behavioral":{"aggression":7.0,"intelligence":5.0,"social_behavior":4.0,"migration_instinct":2.0,"curiosity":3.0,"territorial":6.0,"fearfulness":2.0},"genetic":{"mutation_rate":0.04,"adaptability":5.0,"reproduction_rate":1.5,"lifespan":120,"disease_resistance":3.0},"metabolic":{"energy_efficiency":0.8,"water_need":1.2,"temp_tolerance_min":-5,"temp_tolerance_max":38}}}
+  }
+}
