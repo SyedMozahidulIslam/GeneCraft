@@ -1,0 +1,13 @@
+{
+  "chapter_id": 8,
+  "title": "Perfect Ecosystem",
+  "description": "Achieve and hold a Perfect Ecosystem — the final challenge.",
+  "biomes_available": ["grassland","forest","mountain","desert","river","lake","swamp","arctic"],
+  "starting_rp": 3000,
+  "objectives": [{"id":"perfect_ecosystem","description":"Hold biodiversity index above 0.85 for 100 ticks","type":"biodiversity_sustained","index":0.85,"ticks":100}],
+  "forced_events": [{"event":"ice_age","at_tick":80,"severity":0.6},{"event":"disease","at_tick":200,"severity":0.7}],
+  "completion_reward": {
+    "rp_bonus": 3000,
+    "unlocks": ["genesis_protocol"]
+  }
+}

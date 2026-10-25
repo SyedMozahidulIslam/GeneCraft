@@ -1,0 +1,15 @@
+{
+  "chapter_id": 2,
+  "title": "Survival Basics",
+  "description": "Life is fragile. A drought threatens your ecosystem. Keep your species alive through the crisis.",
+  "biomes_available": ["grassland","forest"],
+  "starting_rp": 350,
+  "unlocked_research": ["basic_genetics","ecosystem_observation","environmental_basics"],
+  "objectives": [
+    {"id":"survive_50_gen","description":"Maintain a species for 50 generations","type":"species_generations","target":50},
+    {"id":"survive_drought","description":"Survive the incoming drought event","type":"survive_event","event":"drought"}
+  ],
+  "forced_events": [{"event":"drought","at_tick":80,"severity":0.6}],
+  "hints": ["Boost energy efficiency before the drought hits.","Higher adaptability helps species weather crises faster."],
+  "completion_reward": {"rp_bonus": 200, "unlocks":["behavioral_science"]}
+}

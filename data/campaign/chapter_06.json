@@ -1,0 +1,13 @@
+{
+  "chapter_id": 6,
+  "title": "Genetic Engineering",
+  "description": "Master the Gene Lab to design and sustain a synthetic organism.",
+  "biomes_available": ["grassland","forest","mountain","desert","river","lake","swamp","arctic"],
+  "starting_rp": 1500,
+  "objectives": [{"id":"synthetic_50","description":"Reach population 50 with a synthetic species","type":"synthetic_population","target":50}],
+  "forced_events": [],
+  "completion_reward": {
+    "rp_bonus": 1000,
+    "unlocks": ["synthetic_life"]
+  }
+}

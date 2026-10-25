@@ -1,0 +1,13 @@
+{
+  "chapter_id": 3,
+  "title": "Predator vs Prey",
+  "description": "Introduce predators and establish a stable predator-prey dynamic.",
+  "biomes_available": ["grassland","forest","river"],
+  "starting_rp": 500,
+  "objectives": [{"id":"stable_balance","description":"Maintain predator-prey ratio stable for 30 ticks","type":"predator_prey_stable","ticks":30}],
+  "forced_events": [],
+  "completion_reward": {
+    "rp_bonus": 300,
+    "unlocks": ["ecology_science"]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "chapter_id": 4,
+  "title": "Climate Crisis",
+  "description": "A climate event threatens your ecosystem. Adapt or perish.",
+  "biomes_available": ["grassland","forest","mountain","desert","river","lake"],
+  "starting_rp": 700,
+  "objectives": [{"id":"survive_climate","description":"Have at least one species survive the climate event","type":"survive_event","event":"drought"}],
+  "forced_events": [{"event":"drought","at_tick":100,"severity":0.7},{"event":"wildfire","at_tick":150,"severity":0.5}],
+  "completion_reward": {
+    "rp_bonus": 500,
+    "unlocks": ["climate_control"]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "chapter_id": 1,
+  "title": "Birth of Life",
+  "description": "The world is empty. Everything begins with you. Create the first species and watch life take its first steps.",
+  "biomes_available": ["grassland"],
+  "starting_rp": 200,
+  "unlocked_research": ["basic_genetics", "ecosystem_observation"],
+  "objectives": [
+    {
+      "id": "create_3_species",
+      "description": "Create 3 different species",
+      "type": "species_count",
+      "target": 3
+    },
+    {
+      "id": "total_population_100",
+      "description": "Reach a total population of 100",
+      "type": "total_population",
+      "target": 100
+    },
+    {
+      "id": "sustain_10_ticks",
+      "description": "Sustain the population for 10 ticks",
+      "type": "sustain_population",
+      "target_population": 100,
+      "ticks": 10
+    }
+  ],
+  "hints": [
+    "Start with a herbivore — it forms the base of any food chain.",
+    "Grassland favours speed and vision. Consider boosting those genes.",
+    "Don't create predators yet — let the herbivore population establish first."
+  ],
+  "completion_reward": {
+    "rp_bonus": 150,
+    "unlocks": ["environmental_basics"]
+  }
+}

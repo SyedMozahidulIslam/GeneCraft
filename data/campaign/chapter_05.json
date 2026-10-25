@@ -1,0 +1,13 @@
+{
+  "chapter_id": 5,
+  "title": "Advanced Evolution",
+  "description": "Guide your species through speciation events and adaptive radiation.",
+  "biomes_available": ["grassland","forest","mountain","desert","river","lake","swamp","arctic"],
+  "starting_rp": 1000,
+  "objectives": [{"id":"three_speciations","description":"Trigger 3 speciation events","type":"speciation_count","target":3}],
+  "forced_events": [],
+  "completion_reward": {
+    "rp_bonus": 750,
+    "unlocks": ["genome_sequencing"]
+  }
+}

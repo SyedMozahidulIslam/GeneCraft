@@ -1,0 +1,13 @@
+{
+  "chapter_id": 7,
+  "title": "Planet Management",
+  "description": "Maintain all 8 biomes simultaneously against multiple disasters.",
+  "biomes_available": ["grassland","forest","mountain","desert","river","lake","swamp","arctic"],
+  "starting_rp": 2000,
+  "objectives": [{"id":"all_biomes","description":"Sustain life in all 8 biomes simultaneously","type":"biomes_populated","target":8}],
+  "forced_events": [{"event":"volcanic_eruption","at_tick":120,"severity":0.8},{"event":"flood","at_tick":200,"severity":0.6}],
+  "completion_reward": {
+    "rp_bonus": 1500,
+    "unlocks": ["planet_architecture"]
+  }
+}
